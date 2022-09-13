@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: "font-1";
+    src: url(../fonts/Merriweather-Light.ttf);
+}
+
+@font-face {
+    font-family:"font-2" ;
+    src: url(../fonts/Inter-ExtraBold.ttf);
+}
+
+$color1: rgb(245, 245, 245);
+$color2: rgb(6, 6, 6);
+$color3: rgb(121, 121, 121);
+$color4: rgba(78, 78, 203, 0.544);
+
+
+@mixin center-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+@mixin center-text{
+    text-align: center;
+}
+
+body{
+    margin: 0 auto;
+    background: url(/images/bg.jpg) center/cover fixed;
+}

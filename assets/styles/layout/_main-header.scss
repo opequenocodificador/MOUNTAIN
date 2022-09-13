@@ -1,0 +1,23 @@
+.main-header-container{
+    margin: 0 auto;
+    background: $color1;
+    max-width: 1400px;
+    @include center-text;
+
+
+p{
+    color: $color2;
+    font-family: "font-1";
+    font-size: 1rem;}    
+}
+
+.img{
+    background: url(/images/pic01.jpg)center/cover;
+    height: 900px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+   
+     
+
+

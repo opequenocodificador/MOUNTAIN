@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "font-1";
+  src: url(../fonts/Merriweather-Light.ttf);
+}
+@font-face {
+  font-family: "font-2";
+  src: url(../fonts/Inter-ExtraBold.ttf);
+}
+body {
+  margin: 0 auto;
+  background: url(/images/bg.jpg) center/cover fixed;
+}
+
+header {
+  margin-top: 450px;
+  text-align: center;
+}
+header h1 {
+  text-transform: uppercase;
+  font-family: "font-2";
+  color: rgb(245, 245, 245);
+  font-size: 6rem;
+  word-spacing: 3.5rem;
+}
+header p {
+  color: rgb(245, 245, 245);
+  font-family: "font-1";
+  font-size: 1.2rem;
+  margin-top: 60px;
+}
+header .fa-circle-arrow-down {
+  color: rgb(245, 245, 245);
+  margin-top: 100px;
+  font-size: 8em;
+}
+
+nav {
+  margin-top: 400px;
+}
+nav .nav-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: rgba(189, 189, 189, 0.279);
+  max-width: 1400px;
+}
+nav .nav-left ul {
+  display: flex;
+  justify-content: flex-start;
+}
+nav .nav-left li {
+  list-style: none;
+}
+nav .nav-left a {
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  font-family: "font-1";
+  text-transform: uppercase;
+}
+nav .nav-left button {
+  color: white;
+  text-transform: uppercase;
+  background: none;
+  cursor: pointer;
+  font-family: "font-2";
+  letter-spacing: 2px;
+  padding: 20px 30px;
+  border: none;
+}
+nav .nav-left button:hover {
+  background: white;
+  color: black;
+  transition: 2s ease-out;
+}
+nav .nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav i {
+  color: rgb(245, 245, 245);
+  letter-spacing: 70px;
+}
+nav .fa-twitter:hover {
+  font-size: 2em;
+  color: rgba(78, 78, 203, 0.544);
+  transition: 1s ease-out;
+}
+nav .fa-facebook-f:hover {
+  font-size: 2em;
+  color: rgba(78, 78, 203, 0.544);
+  transition: 1s ease-out;
+}
+nav .fa-instagram:hover {
+  font-size: 2em;
+  color: rgba(78, 78, 203, 0.544);
+  transition: 1s ease-out;
+}
+nav .fa-github:hover {
+  font-size: 2em;
+  color: rgba(78, 78, 203, 0.544);
+  transition: 1s ease-out;
+}
+
+.main-header-container {
+  margin: 0 auto;
+  background: rgb(245, 245, 245);
+  max-width: 1400px;
+  text-align: center;
+}
+.main-header-container p {
+  color: rgb(6, 6, 6);
+  font-family: "font-1";
+  font-size: 1rem;
+}
+
+.img {
+  background: url(/images/pic01.jpg) center/cover;
+  height: 900px;
+  max-width: 1400px;
+  margin: 0 auto;
+}/*# sourceMappingURL=index.css.map */

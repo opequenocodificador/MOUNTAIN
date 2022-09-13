@@ -1,0 +1,92 @@
+nav{
+    margin-top: 400px;
+
+
+    .nav-container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: rgba(189, 189, 189, 0.279);
+        max-width: 1400px;
+    }
+
+    .nav-left{
+
+        ul{
+            display: flex;
+            justify-content: flex-start;   
+        }
+    
+        li{list-style: none;    
+        }
+    
+        a{
+            text-decoration: none;
+            color: $color1;
+            font-family: "font-1";
+            text-transform: uppercase;
+            
+           }
+        button{
+            color: white; 
+            text-transform: uppercase;
+            background: none;
+            cursor: pointer; 
+            font-family: "font-2";
+            letter-spacing: 2px;
+            padding: 20px 30px;
+            border: none;
+            &:hover{
+                background: white;
+                color: black;
+                transition: 2s ease-out;
+            }   
+        }
+    }
+
+    .nav-right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        
+    }
+
+    i{
+        color: $color1;
+        letter-spacing: 70px;      
+    }
+
+    .fa-twitter{
+        &:hover{
+            font-size: 2em;
+            color: $color4;
+            transition: 1s ease-out;            
+        }  
+
+    }
+
+    .fa-facebook-f{
+        &:hover{
+            font-size: 2em;
+            color: $color4;
+            transition: 1s ease-out; 
+        }  
+
+    }
+
+    .fa-instagram{
+        &:hover{
+            font-size: 2em;
+            color: $color4;
+            transition: 1s ease-out; 
+            }
+    }
+
+    .fa-github{
+        &:hover{
+            font-size: 2em;
+            color: $color4;
+            transition: 1s ease-out; 
+        }
+    }
+}
