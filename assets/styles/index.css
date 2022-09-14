@@ -210,22 +210,23 @@ h4 {
 }
 
 .bottom-header-container {
-  margin: 0 auto;
+  /*margin: 0 auto;
   background: rgb(245, 245, 245);
   max-width: 1400px;
   text-align: center;
   display: grid;
-  grid-template-columns: 45% 10% 45%;
-  /*display: flex;
-    justify-content: center;
-    align-content: stretch;
-    flex-wrap: nowrap;
-    align-items: center;*/
+  grid-template-columns: 45% 10% 45%;*/
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 .bottom-header-container .bottom-header-left h4 {
   font-family: "font-1";
   color: rgb(6, 6, 6);
   margin-bottom: -40px;
+  text-align: center;
 }
 .bottom-header-container .bottom-header-left h3 {
   text-transform: uppercase;
@@ -252,6 +253,9 @@ h4 {
   margin-bottom: 40px;
   line-height: 25px;
 }
+.bottom-header-container .bottom-header-left a {
+  text-decoration: none;
+}
 .bottom-header-container .bottom-header-left button {
   background: none;
   border: 3px solid rgb(6, 6, 6);
@@ -260,6 +264,8 @@ h4 {
   padding: 10px 80px;
   text-transform: uppercase;
   font-family: "font-2";
+  margin: 0 auto;
+  display: block;
 }
 .bottom-header-container .bottom-header-left button:hover {
   cursor: pointer;
@@ -267,11 +273,11 @@ h4 {
   color: rgb(245, 245, 245);
 }
 .bottom-header-container .bande-vertical {
-  border-left: 4px solid black;
-  height: 200px;
-  display: inline-block;
+  border-left: 1px solid rgba(149, 149, 149, 0.37);
+  height: 800px;
 }
 .bottom-header-container .bottom-header-right h4 {
+  text-align: center;
   font-family: "font-1";
   color: rgb(6, 6, 6);
   margin-bottom: -40px;
@@ -301,17 +307,43 @@ h4 {
   margin-bottom: 40px;
   line-height: 25px;
 }
+.bottom-header-container .bottom-header-right a {
+  text-decoration: none;
+}
 .bottom-header-container .bottom-header-right button {
   background: none;
+  margin-top: 40px;
   border: 3px solid rgb(6, 6, 6);
   border-color: rgb(6, 6, 6);
   color: rgb(6, 6, 6);
   padding: 10px 80px;
   text-transform: uppercase;
   font-family: "font-2";
+  margin: 0 auto;
+  display: block;
 }
 .bottom-header-container .bottom-header-right button:hover {
   cursor: pointer;
   background: rgb(6, 6, 6);
   color: rgb(245, 245, 245);
+}
+
+footer {
+  margin: 0 auto;
+  background: rgb(245, 245, 245);
+  max-width: 1400px;
+  margin-top: 100px;
+}
+
+.footer-grid-container {
+  background: rgb(245, 245, 245);
+  display: grid;
+  grid-template-columns: 45% 10% 45%;
+}
+.footer-grid-container .bande-vertical-2 {
+  border-left: 1px solid rgba(149, 149, 149, 0.37);
+  height: 800px;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */
