@@ -1,5 +1,139 @@
 @media screen and (max-width: 800px) {
-body{
-    background: red;
-}
+  body {
+    margin: 0 auto;
+    background: $color1;
+    max-width: 600px;
+   background: url(/images/bg.jpg)center/cover fixed;
+  }
+
+  .nav-left {
+    ul {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+
+  .nav-right {
+    visibility: hidden;
+  }
+
+  .main-header-container {
+    .img {
+      height: 400px;
+      max-width: 500px;
+      margin: 0 auto;
+      margin-top: -40px;
+    }
+  }
+
+  .bottom-header-container{
+    display: inline-block;
+    align-items: center;
+
+    #bande_horizontale{
+        display: none;
+        visibility: hidden;
+    }
+
+    .bande-vertical{
+        display: none;
+        visibility: hidden;
+    }
+  }
+  .bottom-header-right{
+    .button{
+        margin-bottom: 60px;
+    }
+    }
+
+    /*******************FOOTER*****************/
+
+   footer{
+    margin-top: 30px;
+   }
+
+    .footer-container{
+        display: inline-block;
+        align-items: center;
+
+    }
+
+    .form-left{
+        input[type="text"],textarea{
+            padding: 10px 100px;
+            
+          }
+    }
+  }
+
+  /********************/
+
+  @media screen and (max-width: 1400px) {
+    body {
+      margin: 0 auto;
+      background: $color1;
+      max-width: 600px;
+     background: url(/images/bg.jpg)center/cover fixed;
+    }
+  
+    .nav-left {
+      ul {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+      }
+    }
+  
+    .nav-right {
+      visibility: hidden;
+    }
+  
+    .main-header-container {
+      .img {
+        height: 400px;
+        max-width: 500px;
+        margin: 0 auto;
+        margin-top: -40px;
+      }
+    }
+  
+    .bottom-header-container{
+      display: inline-block;
+      align-items: center;
+  
+      #bande_horizontale{
+          display: none;
+          visibility: hidden;
+      }
+  
+      .bande-vertical{
+          display: none;
+          visibility: hidden;
+      }
+    }
+    .bottom-header-right{
+      .button{
+          margin-bottom: 60px;
+      }
+      }
+  
+      /*******************FOOTER*****************/
+  
+     footer{
+      margin-top: 30px;
+     }
+  
+      .footer-container{
+          display: inline-block;
+          align-items: center;
+  
+      }
+  
+      .form-left{
+          input[type="text"],textarea{
+              padding: 10px 100px;
+              
+            }
+      }
     }

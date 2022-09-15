@@ -14,19 +14,14 @@
 }
 
 .bottom-header-container {
-  /*margin: 0 auto;
-  background: rgb(245, 245, 245);
-  max-width: 1400px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 45% 10% 45%;*/
     display: flex;
     justify-content: center;
     align-content: stretch;
     flex-wrap: nowrap;
-    align-items: center;
+    align-items: flex-start;
 
   .bottom-header-left {
+    margin-top: 40px;
     h4 {
       font-family: "font-1";
       color: $color2;
@@ -92,6 +87,7 @@
   
 
   .bottom-header-right {
+    margin-top: 40px;
     h4 {
       text-align: center;
       font-family: "font-1";
