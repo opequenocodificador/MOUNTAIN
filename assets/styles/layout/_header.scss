@@ -1,6 +1,16 @@
 header{
     margin-top: 450px;
     text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+
+    @keyframes headerAnim {
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }        
+    }
   
     
     h1{

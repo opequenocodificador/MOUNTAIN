@@ -15,10 +15,49 @@ body {
   margin: 0 auto;
   background: url(/images/bg.jpg) center/cover fixed;
 }
+body::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: black;
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
+}
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
 
 header {
   margin-top: 450px;
   text-align: center;
+  opacity: 0;
+  transform: translateY(40px);
+  -webkit-animation: headerAnim 1.5s forwards;
+          animation: headerAnim 1.5s forwards;
+}
+@-webkit-keyframes headerAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes headerAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 header h1 {
   text-transform: uppercase;
@@ -190,8 +229,7 @@ h4 {
 }
 .main-header-container button:hover {
   cursor: pointer;
-  background: rgb(6, 6, 6);
-  color: rgb(245, 245, 245);
+  transform: scale(1.05);
 }
 
 .bottom-header {
@@ -266,8 +304,7 @@ h4 {
 }
 .bottom-header-container .bottom-header-left button:hover {
   cursor: pointer;
-  background: rgb(6, 6, 6);
-  color: rgb(245, 245, 245);
+  transform: scale(1.05);
 }
 .bottom-header-container .bande-vertical {
   border-left: 1px solid rgba(149, 149, 149, 0.37);
@@ -324,8 +361,7 @@ h4 {
 }
 .bottom-header-container .bottom-header-right button:hover {
   cursor: pointer;
-  background: rgb(6, 6, 6);
-  color: rgb(245, 245, 245);
+  transform: scale(1.05);
 }
 
 footer {
@@ -356,7 +392,8 @@ footer {
   margin: 50px 50px;
   line-height: 10px;
 }
-.form-left input[type=text], .form-left textarea {
+.form-left input[type=text],
+.form-left textarea {
   width: 50%;
   margin: 20px 0 40px;
   border-radius: 4px;
@@ -400,8 +437,7 @@ footer {
 }
 .form-left input[type=submit]:hover {
   cursor: pointer;
-  background: rgb(6, 6, 6);
-  color: rgb(245, 245, 245);
+  transform: scale(1.05);
 }
 
 .form-right {
@@ -451,7 +487,7 @@ footer {
   padding: 0px;
   margin: 0px;
   border: none;
-  Max-width: 100%;
+  max-width: 100%;
   height: 1px;
   background-color: rgba(149, 149, 149, 0.37);
 }
@@ -459,7 +495,7 @@ footer {
   padding: 0px;
   margin: 0px;
   border: none;
-  Max-width: 100%;
+  max-width: 100%;
   height: 1px;
   background-color: rgba(149, 149, 149, 0.37);
 }
@@ -467,7 +503,7 @@ footer {
   padding: 0px;
   margin: 0px;
   border: none;
-  Max-width: 100%;
+  max-width: 100%;
   height: 1px;
   background-color: rgba(149, 149, 149, 0.37);
 }

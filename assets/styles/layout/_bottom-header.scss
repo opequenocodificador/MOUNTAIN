@@ -73,8 +73,7 @@
       display: block;
       &:hover {
         cursor: pointer;
-        background: $color2;
-        color: $color1;
+        transform: scale(1.05);
       }
     }
   }
@@ -140,8 +139,7 @@
       display: block;
       &:hover {
         cursor: pointer;
-        background: $color2;
-        color: $color1;
+        transform: scale(1.05);
       }
     }
   }
